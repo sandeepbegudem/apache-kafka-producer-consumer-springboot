@@ -14,7 +14,7 @@ public class KafkaConsumerListener {
     @KafkaListener(topics = "product-notifications",
             groupId = "product_group_id")
     public void consumeTopic(Product product){
-        LOGGER.info("consumed event: [{}] the topic: product-notifications from Kafka Broker!\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\n",
+        LOGGER.info("consumed the event: [{}] the topic: product-notifications from kafka broker!\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\n",
                  product.toString());
     }
 }

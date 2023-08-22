@@ -23,6 +23,6 @@ public class ProducerController {
         catch(Exception exception){
             System.out.println(exception.getMessage());
         }
-        return String.format("event has been published successfully!\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89");
+        return String.format("event has been published to kafka broker successfully!\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89");
     }
 }
