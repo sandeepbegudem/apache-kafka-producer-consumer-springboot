@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.coding.with.sandeep</groupId>
-	<artifactId>kafka.consumer.application</artifactId>
+	<artifactId>kafka-consumer-application</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka.consumer.application</name>

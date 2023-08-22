@@ -32,9 +32,9 @@ public class KafkaMessagePublisher {
                     LOGGER.info("events [{}] for topic: product-notifications was sent to kafka broker!\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\n",
                              product.toString());
 
-                    System.out.println("events as been sent to the topic: product-notifications" + result.getRecordMetadata().offset());
+                    System.out.println("event has been sent to the topic: product-notifications in partition: "+ result.getRecordMetadata().partition());
                 } else {
-                    System.out.println("events was not sent to the topic: product-notifications" + exception.getMessage());
+                    System.out.println("event was not sent to the topic: product-notifications" + exception.getMessage());
                 }
             });
         }
