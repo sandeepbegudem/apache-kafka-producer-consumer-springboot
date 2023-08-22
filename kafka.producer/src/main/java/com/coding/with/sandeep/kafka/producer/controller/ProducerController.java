@@ -16,13 +16,13 @@ public class ProducerController {
     private KafkaMessagePublisher publisher;
 
     @PostMapping("/post-messages")
-    public void sendEvents(@RequestBody Product product){
+    public String sendEvents(@RequestBody Product product){
         try{
-            System.out.println("event has been posted successfully!...");
             publisher.sendMessageToTopic(product);
         }
         catch(Exception exception){
             System.out.println(exception.getMessage());
         }
+        return String.format("event has been published successfully!\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89");
     }
 }

@@ -29,7 +29,7 @@ public class KafkaMessagePublisher {
             future.whenComplete((result, exception) ->
             {
                 if (exception == null) {
-                    LOGGER.info("Events [{}] for Topic: product-notifications was sent to Kafka Broker!\uD83C\uDF89\n",
+                    LOGGER.info("Events [{}] for Topic: product-notifications was sent to Kafka Broker!\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\n",
                              product.toString());
 
                     System.out.println("events as been sent to the topic: product-notifications" + result.getRecordMetadata().offset());
